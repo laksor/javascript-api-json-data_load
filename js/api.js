@@ -29,11 +29,14 @@ function loadPost(){
 }
 
 function getPost(data){
-  const u = document.getElementById('post');
+  const sectionContainer = document.getElementById('post');
   for(const post of data){
-    const l = document.createElement('li');
-    l.innerText = `title: ${post.title} .....
-     body: ${post.body}`;
-    u.appendChild(l);
+    const div = document.createElement('div');
+    div.classList.add('post');
+    div.innerHTML = `
+    <h3>${post.title}</h3>
+    <p>${post.body}</p>
+    `;
+    sectionContainer.appendChild(div);
   }
 }

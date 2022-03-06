@@ -7,3 +7,10 @@ li{
     font-weight: bold;
     text-align: center;
 }
+.post{
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(19, 11, 1);
+    border-radius: 20px;
+}
